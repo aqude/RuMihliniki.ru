@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
       import RoutesPage from "./RoutesPage";
+      import ModalSettings from "./ModalsWindows/ModalSettings";
       function App() {
+        const [modalActive, setModalActive] = useState(true)
   return (
       <div>
         <header className="bg-slate-900 pb-10 drop-shadow-xl mb-10">
@@ -37,9 +39,9 @@ import React from 'react';
                          className="">⚙️</a>
                   </div>
               </div>
-
         </div>
         </header>
+        <ModalSettings active=/>
         <RoutesPage />
       </div>
   ); } export default App;
